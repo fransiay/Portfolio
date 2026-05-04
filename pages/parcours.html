@@ -63,6 +63,26 @@
             opacity: 0;
             transform: scale(0.95);
         }
+
+        /* Style pour les logos officiels */
+        .bts-skill-icon img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            filter: brightness(0) invert(1); /* Par défaut blanc pour aller avec le fond bleu */
+        }
+
+        /* Optionnel : Garder les couleurs originales si on retire le fond bleu */
+        .bts-skill-icon.original-color {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .bts-skill-icon.original-color img {
+            filter: none;
+            width: 40px;
+            height: 40px;
+        }
     </style>
 </head>
 
@@ -488,95 +508,117 @@
                     <!-- Barre de filtres -->
                     <div class="bts-filter-bar" role="group" aria-label="Filtrer les compétences BTS SIO">
                         <button class="filter-btn active" data-filter="all">Toutes</button>
-                        <button class="filter-btn" data-filter="developpement">Développement</button>
-                        <button class="filter-btn" data-filter="donnees">Données</button>
-                        <button class="filter-btn" data-filter="gestion">Gestion</button>
-                        <button class="filter-btn" data-filter="securite">Sécurité</button>
+                        <button class="filter-btn" data-filter="langages">Langages</button>
+                        <button class="filter-btn" data-filter="technologies">Technologies</button>
+                        <button class="filter-btn" data-filter="logiciels">Logiciels</button>
                     </div>
 
                     <div class="bts-skills" id="bts-skills-grid">
-                        <div class="bts-skill-card" data-category="developpement">
-                            <div class="bts-skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="16 18 22 12 16 6" />
-                                    <polyline points="8 6 2 12 8 18" />
-                                </svg>
+                        <!-- Langages -->
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
                             </div>
-                            <h4>Développement Web</h4>
-                            <p>Création de sites et applications web responsives</p>
+                            <h4>PHP 8</h4>
+                            <p>Maîtrise de la programmation orientée objet et backend.</p>
                         </div>
 
-                        <div class="bts-skill-card" data-category="donnees">
-                            <div class="bts-skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3" />
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-                                </svg>
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                             </div>
-                            <h4>Base de données</h4>
-                            <p>Conception et gestion de bases de données relationnelles</p>
+                            <h4>Python</h4>
+                            <p>Scripts d'automatisation et analyse de données.</p>
                         </div>
 
-                        <div class="bts-skill-card" data-category="gestion">
-                            <div class="bts-skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                    <polyline points="14 2 14 8 20 8" />
-                                    <line x1="16" y1="13" x2="8" y2="13" />
-                                    <line x1="16" y1="17" x2="8" y2="17" />
-                                </svg>
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                             </div>
-                            <h4>Analyse des besoins</h4>
-                            <p>Étude et compréhension des besoins utilisateurs</p>
+                            <h4>JavaScript</h4>
+                            <p>Développement de scripts côté client et logique dynamique.</p>
                         </div>
 
-                        <div class="bts-skill-card" data-category="gestion">
-                            <div class="bts-skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg>
+                        <div class="bts-skill-card" data-category="langages">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                             </div>
-                            <h4>Travail en équipe</h4>
-                            <p>Collaboration et communication efficace</p>
+                            <h4>SQL / MySQL</h4>
+                            <p>Conception et manipulation de bases de données relationnelles.</p>
                         </div>
 
-                        <div class="bts-skill-card" data-category="gestion">
-                            <div class="bts-skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M12 20V10" />
-                                    <path d="M18 20V4" />
-                                    <path d="M6 20v-4" />
-                                </svg>
+                        <!-- Technologies -->
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                             </div>
-                            <h4>Gestion de projet</h4>
-                            <p>Planification et suivi de projets informatiques</p>
+                            <h4>React.js</h4>
+                            <p>Création d'interfaces utilisateur modernes et réactives.</p>
                         </div>
 
-                        <div class="bts-skill-card" data-category="securite">
-                            <div class="bts-skill-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                                </svg>
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
                             </div>
-                            <h4>Cybersécurité</h4>
-                            <p>Sensibilisation aux enjeux de sécurité informatique</p>
+                            <h4>Laravel</h4>
+                            <p>Développement rapide d'applications web avec PHP.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                            </div>
+                            <h4>Tailwind CSS</h4>
+                            <p>Conception d'interfaces modernes et responsives.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.simpleicons.org/expo/000000" alt="Expo">
+                            </div>
+                            <h4>Expo</h4>
+                            <p>Développement d'applications mobiles cross-platform avec React Native.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="technologies">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+                            </div>
+                            <h4>API REST</h4>
+                            <p>Tests et intégration d'API avec Postman.</p>
+                        </div>
+
+                        <!-- Logiciels -->
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            </div>
+                            <h4>Git / GitHub</h4>
+                            <p>Gestion de version et collaboration sur le code.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA">
+                            </div>
+                            <h4>IntelliJ IDEA</h4>
+                            <p>Environnement de développement pour Java et le développement d'applications.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="../photo/staruml.png" alt="StarUML">
+                            </div>
+                            <h4>StarUML</h4>
+                            <p>Modélisation de diagrammes UML et conception logicielle.</p>
+                        </div>
+
+                        <div class="bts-skill-card" data-category="logiciels">
+                            <div class="bts-skill-icon original-color">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                            </div>
+                            <h4>Figma</h4>
+                            <p>Maquettage UI/UX et prototypage d'applications.</p>
                         </div>
                     </div>
                 </div>

@@ -491,17 +491,35 @@ function submitForm(form, successElement) {
     submitButton.innerHTML = '<span>Envoi en cours...</span>';
     submitButton.disabled = true;
     
-    // Simuler un délai d'envoi (2 secondes)
-    // TODO: Remplacer par un vrai appel fetch() ou XMLHttpRequest
-    setTimeout(function() {
-        // Réinitialiser le formulaire
-        form.reset();
-        
-        // Afficher le message de succès
-        if (successElement) {
-            successElement.classList.add('show');
+    // Récupérer les données du formulaire
+    const formData = new FormData(form);
+    
+    // Envoyer via Fetch vers Formspree
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
         }
-        
+    })
+    .then(response => {
+        if (response.ok) {
+            // Réinitialiser le formulaire
+            form.reset();
+            
+            // Afficher le message de succès
+            if (successElement) {
+                successElement.classList.add('show');
+                successElement.textContent = "Votre message a été envoyé avec succès ! Je vous répondrai bientôt.";
+            }
+        } else {
+            alert("Oups ! Un problème est survenu lors de l'envoi.");
+        }
+    })
+    .catch(error => {
+        alert("Oups ! Un problème réseau est survenu.");
+    })
+    .finally(() => {
         // Restaurer le bouton
         submitButton.innerHTML = originalText;
         submitButton.disabled = false;
@@ -512,7 +530,7 @@ function submitForm(form, successElement) {
                 successElement.classList.remove('show');
             }
         }, 5000);
-    }, 2000);
+    });
 }
 
 // ================================================

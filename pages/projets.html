@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mes projets informatiques - Portfolio BTS Informatique">
+    <meta name="author" content="Votre Nom">
+
+    <!-- ===== TITRE DE LA PAGE ===== -->
+    <title>Mes Projets | Portfolio BTS Informatique</title>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FEUILLE DE STYLE ===== -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Mon Portfolio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="parcours.html" class="nav-link">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link active">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         EN-TÊTE DE PAGE
+    ========================================= -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Mes Projets</h1>
+            <p class="page-subtitle">Découvrez mes réalisations et travaux pratiques</p>
+        </div>
+    </header>
+
+    <!-- ========================================
+         SECTION PROJETS
+    ========================================= -->
+    <section id="projets" class="section projets">
+        <div class="container">
+            <!-- Filtres des projets -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="scolaire">Scolaire</button>
+                <button class="filter-btn" data-filter="personnel">Personnel</button>
+                <button class="filter-btn" data-filter="stage">Stage</button>
+            </div>
+
+            <!-- Grille des projets -->
+            <div class="projects-grid">
+
+                <!-- Projet 1 - Scolaire -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <!-- Image du projet - Remplacer par votre image -->
+                        <img src="photo/to do app.png" alt="Application de gestion"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder">
+                            <span>Image Projet 1</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Scolaire</span>
+                        <h3 class="project-title">Todo App</h3>
+                        <p class="project-description">
+                            Application simple permettant d’ajouter, modifier et supprimer des tâches afin d’organiser
+                            et suivre efficacement son travail au quotidien.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Html</span>
+                            <span class="tech-tag">Css</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Documentation</a>
+                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 2 - Personnel -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <img src="../images/project2.png" alt="Portfolio personnel"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder">
+                            <span>Image Projet 2</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Portfolio personnel</h3>
+                        <p class="project-description">
+                            Ce portfolio que vous visitez actuellement ! Site web responsive présentant
+                            mon parcours, mes compétences et mes projets.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Voir en ligne</a>
+                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Projet  - scolaire -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <img src="../images/project2.png" alt="ussd"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-placeholder">
+                            <span>Image Projet 2</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Portfolio personnel</h3>
+                        <p class="project-description">
+                            Ce portfolio que vous visitez actuellement ! Site web responsive présentant
+                            mon parcours, mes compétences et mes projets.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Voir en ligne</a>
+                            <a href="https://github.com/fransiay/ussd" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Projet 3 - Stage -->
+                <article class="project-card" data-category="stage" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>Image Projet 3</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Stage</span>
+                        <h3 class="project-title">Application interne entreprise</h3>
+                        <p class="project-description">
+                            Développement d'une application de gestion interne pendant mon stage.
+                            Intégration avec le système existant et création d'interfaces utilisateur.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Documentation</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 4 - Scolaire -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span><img
+                                    src="C:\Users\siang\Documents\portfolio\photo\Capture d'écran 2026-03-09 111513.png"
+                                    alt=""></span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Scolaire</span>
+                        <h3 class="project-title">Site de voyage</h3>
+                        <p class="project-description">
+                            Site présentant plusieurs destinations , avec une navigation simple et une interface claire
+                            pour explorer les lieux
+                            proposés.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">FullCalendar</span>
+                            <span class="tech-tag">AJAX</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Documentation</a>
+                            <a href="https://github.com/fransiay/site_voyage"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 5 - Personnel -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span><img src="photo/snake.gif" alt="image de serpent mangeons une balle"></span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">snake</h3>
+                        <p class="project-description">
+                            Petit jeu rétro où le joueur contrôle un serpent qui grandit à chaque pomme mangée. Le
+                            projet met en pratique la gestion des événements clavier, l’animation sur canvas et la
+                            logique de collision pour créer une expérience simple et interactive.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag"></span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Voir en ligne</a>
+                            <a href=" " class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projet 6 - Scolaire -->
+                <article class="project-card" data-category="scolaire" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>Image Projet 6</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Scolaire</span>
+                        <h3 class="project-title">nkuta-Site de restauration</h3>
+                        <p class="project-description">
+                            Site vitrine de restaurant développé en HTML5 et CSS3, comprenant plusieurs pages (menu,
+                            réservation, contact) et une mise en page moderne illustrée par des visuels professionnels.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Html</span>
+                            <span class="tech-tag">Css</span>
+                            <span class="tech-tag">JavaScript</span>
+
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/fransiay/site_restaurant"
+                                class="btn btn-small btn-primary">Documentation</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Projet 7 - Personnel -->
+                <article class="project-card" data-category="personnel" data-animate>
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span><img
+                                    src="C:\Users\siang\Documents\portfolio\photo\Capture d'écran 2026-03-09 113242.png"
+                                    alt="image de serpent mangeons une balle"></span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Projet Personnel</span>
+                        <h3 class="project-title">Grace Divine</h3>
+                        <span>Institut de formation</span>
+                        <p class="project-description">
+                            Site vitrine présentant un institut spécialisé dans les métiers de la beauté, avec ses
+                            formations et services mis en avant.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary">Voir en ligne</a>
+                            <a href="https://github.com/fransiay/site_restaurant"
+                                class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Mon Portfolio</h3>
+                    <p class="footer-description">
+                        Étudiant en BTS SIO option SLAM, passionné par le développement web
+                        et les nouvelles technologies.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="mailto:votre.siangsfransia@gmail.com" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON FLOTTANT CV
+    ========================================= -->
+    <a href="C:\Users\siang\Documents\portfolio\mon_cv" class="cv-floating-btn" download="CV_fransia_siangany"
+        aria-label="Télécharger mon CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Télécharger CV</span>
+    </a>
+
+    <!-- ===== SCRIPT JAVASCRIPT ===== -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

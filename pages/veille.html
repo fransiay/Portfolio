@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ===== META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma veille technologique - IA et modélisation 3D pour le jeu vidéo">
+    <meta name="author" content="Votre Nom">
+
+    <!-- ===== TITRE DE LA PAGE ===== -->
+    <title>Veille Technologique | Portfolio BTS SIO</title>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FEUILLE DE STYLE ===== -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Mon Portfolio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="parcours.html" class="nav-link">Parcours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projets.html" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="veille.html" class="nav-link active">Veille</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         EN-TÊTE DE PAGE
+    ========================================= -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Veille Technologique</h1>
+            <p class="page-subtitle">L'IA revolutionne la modelisation 3D et la creation de personnages pour le jeu
+                video</p>
+        </div>
+    </header>
+
+    <!-- ========================================
+         INTRODUCTION - THÈME DE VEILLE
+    ========================================= -->
+    <section class="section veille-intro">
+        <div class="container">
+            <div class="veille-intro-content" data-animate>
+                <h2>Introduction</h2>
+                <p>
+                    La phase de production d'un jeu (creation d'assets, de personnages, d'animations) est l'une des plus
+                    longues et couteuses du pipeline. <strong>L'IA generative</strong> et les outils d'assistance
+                    deviennent
+                    des catalyseurs majeurs, en automatisant une partie de ces taches et en democratisant la creation
+                    3D,
+                    tout en ouvrant de nouveaux terrains d'experimentation artistique.
+                </p>
+
+                <!-- Thèmes principaux -->
+                <div class="veille-themes">
+                    <div class="veille-theme">
+                        <span class="theme-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </span>
+                        <h4>Generation d'Assets 3D</h4>
+                        <p>Textures, modeles et environnements generes par prompt</p>
+                    </div>
+                    <div class="veille-theme">
+                        <span class="theme-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </span>
+                        <h4>Personnages Realistes</h4>
+                        <p>MetaHuman, Audio2Face et avatars hyper-realistes</p>
+                    </div>
+                    <div class="veille-theme">
+                        <span class="theme-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </span>
+                        <h4>Animation Intelligente</h4>
+                        <p>Motion Matching et animations procedurales par IA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 1 - TENDANCES ET AVANCÉES
+    ========================================= -->
+    <section id="tendances" class="section veille-tendances">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tendances et Avancees Recentes</h2>
+                <p class="section-subtitle">2024-2025 : Les innovations qui transforment l'industrie</p>
+            </div>
+
+            <!-- Grille des tendances -->
+            <div class="tendances-grid">
+
+                <!-- Tendance A : Assets et Textures -->
+                <article class="tendance-card" data-animate>
+                    <div class="tendance-header">
+                        <div class="tendance-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <circle cx="8.5" cy="8.5" r="1.5" />
+                                <polyline points="21 15 16 10 5 21" />
+                            </svg>
+                        </div>
+                        <span class="tendance-label">A</span>
+                    </div>
+                    <h3 class="tendance-title">Generation d'Assets et de Textures par Prompt</h3>
+                    <p class="tendance-description">
+                        Integration directe aux moteurs de jeu pour un workflow optimise.
+                    </p>
+
+                    <div class="tendance-details">
+                        <div class="tendance-item">
+                            <h4>Unreal Engine 5.x</h4>
+                            <p>Epic pousse vers un workflow ou la generation procedurale, l'assistance par IA et les
+                                plugins
+                                de generation d'assets sont directement integres a l'editeur (AI Assistant, PCG,
+                                integrations
+                                avec des modeles externes).</p>
+                            <span class="tendance-source">Source : Unreal Fest 2024</span>
+                        </div>
+
+                        <div class="tendance-item">
+                            <h4>Unity Muse et Unity Sentis</h4>
+                            <p><strong>Unity Muse</strong> permet la generation d'elements de jeu (textures, sprites,
+                                animations)
+                                a partir de prompts texte ou de croquis. <strong>Unity Sentis</strong> permet
+                                d'embarquer des modeles
+                                neuronaux (format ONNX) dans le runtime pour des NPCs plus complexes.</p>
+                            <span class="tendance-source">Source : Unity Blog</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tendance B : Personnages -->
+                <article class="tendance-card" data-animate>
+                    <div class="tendance-header">
+                        <div class="tendance-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <span class="tendance-label">B</span>
+                    </div>
+                    <h3 class="tendance-title">Creation de Personnages Hyper-Realistes</h3>
+                    <p class="tendance-description">
+                        Des outils revolutionnaires pour creer des humains virtuels convaincants.
+                    </p>
+
+                    <div class="tendance-details">
+                        <div class="tendance-item">
+                            <h4>MetaHuman (Epic Games)</h4>
+                            <p>Ecosysteme base sur des scans 3D haute qualite et des techniques d'apprentissage pour
+                                interpoler
+                                des dizaines de visages. Creation rapide de personnages realistes avec rigs faciaux et
+                                corporels
+                                prets a l'emploi, integrables a Unreal Engine.</p>
+                        </div>
+
+                        <div class="tendance-item">
+                            <h4>Audio2Face (NVIDIA)</h4>
+                            <p>Generation automatique d'animations faciales et de lip-sync en temps reel a partir d'un
+                                fichier
+                                audio. Reduit le besoin en capture de mouvement pour les dialogues.</p>
+                            <span class="tendance-source">NVIDIA a rendu Audio2Face open source</span>
+                        </div>
+
+                        <div class="tendance-item">
+                            <h4>Leonardo.AI et IA Generative</h4>
+                            <p>Plateformes utilisees pour produire des concept arts de personnages, textures ou
+                                variations
+                                de costumes servant de base a la modelisation 3D.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tendance C : Animation -->
+                <article class="tendance-card" data-animate>
+                    <div class="tendance-header">
+                        <div class="tendance-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <span class="tendance-label">C</span>
+                    </div>
+                    <h3 class="tendance-title">Animation Intelligente et Motion Matching 2.0</h3>
+                    <p class="tendance-description">
+                        L'IA pour des animations fluides et contextuelles.
+                    </p>
+
+                    <div class="tendance-details">
+                        <div class="tendance-item">
+                            <h4>IA pour l'Animation Procedurale</h4>
+                            <p>Apres les systemes de Motion Matching popularises dans des AAA comme <em>The Last of Us
+                                    Part II</em>,
+                                de nouveaux modeles IA generent des transitions fluides en fonction du contexte
+                                (vitesse, terrain,
+                                obstacles, etat du personnage).</p>
+                        </div>
+
+                        <div class="tendance-item">
+                            <h4>Cascadeur</h4>
+                            <p>Solution utilisant des algorithmes assistes par IA et de la physique pour corriger
+                                automatiquement
+                                les poses et rendre les animations de combat plus credibles, tout en reduisant le
+                                travail manuel
+                                des animateurs.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tendance D : Inpainting 3D -->
+                <article class="tendance-card" data-animate>
+                    <div class="tendance-header">
+                        <div class="tendance-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                <path d="M2 2l7.586 7.586" />
+                                <circle cx="11" cy="11" r="2" />
+                            </svg>
+                        </div>
+                        <span class="tendance-label">D</span>
+                    </div>
+                    <h3 class="tendance-title">Inpainting et Outpainting 3D</h3>
+                    <p class="tendance-description">
+                        Modification locale de modeles 3D via des prompts texte.
+                    </p>
+
+                    <div class="tendance-details">
+                        <div class="tendance-item">
+                            <h4>Edition 3D par Prompt</h4>
+                            <p>Changer une coiffure, ajouter une armure, user un vetement sans repartir de zero.
+                                Des travaux comme <strong>Magic3D de NVIDIA</strong> montrent la possibilite de creer
+                                ou d'editer des formes 3D a partir d'instructions en langage naturel.</p>
+                        </div>
+
+                        <div class="tendance-item">
+                            <h4>Text-to-3D</h4>
+                            <p>Generation complete de modeles 3D a partir de descriptions textuelles, une revolution
+                                pour le prototypage rapide.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 2 - PERSPECTIVES FUTURES
+    ========================================= -->
+    <section id="perspectives" class="section veille-perspectives">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perspectives Futures</h2>
+                <p class="section-subtitle">2025 et au-dela : Ce qui nous attend</p>
+            </div>
+
+            <div class="perspectives-grid">
+                <!-- Perspective 1 -->
+                <div class="perspective-card" data-animate>
+                    <div class="perspective-number">01</div>
+                    <h3>Workflows Text-to-3D en Production</h3>
+                    <p>
+                        La generation d'un modele 3D exploitable en jeu (maillage, textures, LODs de base)
+                        a partir d'une simple description textuelle devrait devenir un outil courant pour
+                        le prototypage rapide de personnages ou d'objets.
+                    </p>
+                </div>
+
+                <!-- Perspective 2 -->
+                <div class="perspective-card" data-animate>
+                    <div class="perspective-number">02</div>
+                    <h3>NPCs Dynamiques et Persistants</h3>
+                    <p>
+                        En combinant des modeles de generation de personnages (apparence, voix) avec des LLM
+                        embarques dans le moteur via des solutions comme Sentis, on peut imaginer des NPCs
+                        dotes de memoire, de motivations, et de dialogues non scriptes generes a la volee.
+                    </p>
+                </div>
+
+                <!-- Perspective 3 -->
+                <div class="perspective-card" data-animate>
+                    <div class="perspective-number">03</div>
+                    <h3>Co-creation Artistique Homme-Machine</h3>
+                    <p>
+                        L'IA devient un assistant : elle genere des variantes, propose des idees, optimise
+                        la topologie ou automatise les taches repetitives, tandis que l'artiste garde la
+                        direction artistique et assure la coherence du style.
+                    </p>
+                </div>
+
+                <!-- Perspective 4 -->
+                <div class="perspective-card" data-animate>
+                    <div class="perspective-number">04</div>
+                    <h3>Ethique et Propriete Intellectuelle</h3>
+                    <p>
+                        L'usage de modeles entraines sur d'enormes bases de donnees d'oeuvres pose des questions
+                        juridiques : droits d'auteur, style d'artistes copies, responsabilite en cas de plagiat.
+                        Les studios doivent suivre l'evolution des cadres legaux.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 3 - SOURCES DE VEILLE
+    ========================================= -->
+    <section class="section veille-sources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Sources de Veille</h2>
+                <p class="section-subtitle">Blogs, chaines YouTube et outils pour rester informe</p>
+            </div>
+
+            <div class="sources-wrapper">
+                <!-- Blogs et sites -->
+                <div class="sources-category" data-animate>
+                    <h3 class="sources-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                        Blogs et Sites Specialises
+                    </h3>
+                    <div class="sources-grid">
+                        <div class="source-card">
+                            <h4>80 Level</h4>
+                            <p>Articles sur l'art 3D, le game dev et les outils IA avec interviews de studios.</p>
+                            <a href="https://80.lv/" target="_blank" rel="noopener">80.lv</a>
+                        </div>
+                        <div class="source-card">
+                            <h4>Game Developer</h4>
+                            <p>Actu et analyses techniques sur le developpement de jeux, sections IA et pipelines 3D.
+                            </p>
+                            <a href="https://www.gamedeveloper.com/" target="_blank"
+                                rel="noopener">gamedeveloper.com</a>
+                        </div>
+                        <div class="source-card">
+                            <h4>NVIDIA Developer Blog</h4>
+                            <p>Annonces officielles sur Audio2Face, avatars IA et generation 3D.</p>
+                            <a href="https://developer.nvidia.com/blog" target="_blank"
+                                rel="noopener">developer.nvidia.com</a>
+                        </div>
+                        <div class="source-card">
+                            <h4>Unreal Engine Blog</h4>
+                            <p>Communiques sur les nouvelles fonctions IA : AI Assistant, PCG, outils d'animation.</p>
+                            <a href="https://www.unrealengine.com/blog" target="_blank"
+                                rel="noopener">unrealengine.com</a>
+                        </div>
+                        <div class="source-card">
+                            <h4>Unity Blog</h4>
+                            <p>Presentations de Unity 6, Muse et Sentis, cas d'usage IA en jeu video.</p>
+                            <a href="https://blog.unity.com/" target="_blank" rel="noopener">blog.unity.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chaînes YouTube -->
+                <div class="sources-category" data-animate>
+                    <h3 class="sources-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                        </svg>
+                        Chaines YouTube
+                    </h3>
+                    <div class="sources-grid">
+                        <div class="source-card">
+                            <h4>Two Minute Papers</h4>
+                            <p>Vulgarisation des derniers papiers de recherche en IA lies a la 3D.</p>
+                        </div>
+                        <div class="source-card">
+                            <h4>Unreal Engine</h4>
+                            <p>Presentations Unreal Fest, demos des nouvelles features animation et IA.</p>
+                        </div>
+                        <div class="source-card">
+                            <h4>Unity</h4>
+                            <p>Presentations de Unity 6, Muse et Sentis, cas d'usage IA en jeu video.</p>
+                        </div>
+                        <div class="source-card">
+                            <h4>FlippedNormals</h4>
+                            <p>Contenu art 3D et pipeline pro, discussions sur l'impact de l'IA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils de veille -->
+                <div class="sources-category" data-animate>
+                    <h3 class="sources-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                        Outils de Veille
+                    </h3>
+                    <div class="sources-grid">
+                        <div class="source-card">
+                            <h4>Feedly</h4>
+                            <p>Agregateur RSS pour suivre 80 Level, Game Developer, NVIDIA, Unreal, Unity.</p>
+                        </div>
+                        <div class="source-card">
+                            <h4>Wakelet / Notion</h4>
+                            <p>Organisation des liens et construction d'une page "Veille IA & 3D" propre.</p>
+                        </div>
+                        <div class="source-card">
+                            <h4>X (Twitter)</h4>
+                            <p>Hashtags : #GameAI, #GenerativeAI, #3DModeling, #UE5, #Unity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION 4 - MÉTHODOLOGIE D'ANALYSE
+    ========================================= -->
+    <section class="section veille-methodologie">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Methodologie d'Analyse</h2>
+                <p class="section-subtitle">Comment je structure ma veille pour le portfolio</p>
+            </div>
+
+            <div class="methodologie-content" data-animate>
+                <p class="methodologie-intro">
+                    Pour chaque technologie ou outil que je cite, je structure mon analyse en trois points :
+                </p>
+
+                <div class="methodologie-grid">
+                    <div class="methodologie-card">
+                        <div class="methodologie-number">1</div>
+                        <h4>Probleme Resolu</h4>
+                        <p class="methodologie-example">
+                            Exemple : "Reduit le temps de creation des animations faciales pour les cinematiques."
+                        </p>
+                    </div>
+
+                    <div class="methodologie-card">
+                        <div class="methodologie-number">2</div>
+                        <h4>Exemple d'Outil</h4>
+                        <p class="methodologie-example">
+                            Exemple : Audio2Face de NVIDIA pour le lip-sync automatique.
+                        </p>
+                    </div>
+
+                    <div class="methodologie-card">
+                        <div class="methodologie-number">3</div>
+                        <h4>Limite ou Point de Vigilance</h4>
+                        <p class="methodologie-example">
+                            Exemple : Risque d'homogeneisation du style graphique, questions legales, dependance au
+                            cloud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Mon Portfolio</h3>
+                    <p class="footer-description">
+                        Etudiant en BTS SIO option SLAM, passionne par le developpement web
+                        et les nouvelles technologies.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Suivez-moi</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Mon Portfolio. Tous droits reserves.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BOUTON FLOTTANT CV
+    ========================================= -->
+    <a href="../documents/cv.pdf" class="cv-floating-btn" download="CV_Prenom_Nom.pdf" aria-label="Telecharger mon CV">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Telecharger CV</span>
+    </a>
+
+    <!-- ===== SCRIPT JAVASCRIPT ===== -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
